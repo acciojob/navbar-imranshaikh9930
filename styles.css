@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+
+nav{
+	 display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6e072d;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 18px 27px; /* 18px (font size) vertical, 18px * 1.5 = 27px horizontal */
+    cursor: pointer;
+    border-left: 2px solid white;
+}
+nav li:first-child {
+    border-left: none;
+}
+nav li:hover {
+    background-color: #b90e4d;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+.nav-right {
+    justify-content: flex-end;
+}
+.nav-left li:last-child {
+    border-right: none;
+}
+
+.nav-right li:first-child {
+    border-left: none;
+}
